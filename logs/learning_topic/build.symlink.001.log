@@ -1,0 +1,5 @@
+Linked: (/home/lizh/workspace/learning_ws/devel/.private/learning_topic/share/learning_topic/cmake/learning_topicConfig.cmake, /home/lizh/workspace/learning_ws/devel/share/learning_topic/cmake/learning_topicConfig.cmake)
+Linked: (/home/lizh/workspace/learning_ws/devel/.private/learning_topic/share/learning_topic/cmake/learning_topicConfig-version.cmake, /home/lizh/workspace/learning_ws/devel/share/learning_topic/cmake/learning_topicConfig-version.cmake)
+Symlinking /home/lizh/workspace/learning_ws/devel/lib/learning_topic/turtle_pose_sub
+Linked: (/home/lizh/workspace/learning_ws/devel/.private/learning_topic/lib/learning_topic/turtle_velocity_pub, /home/lizh/workspace/learning_ws/devel/lib/learning_topic/turtle_velocity_pub)
+Linked: (/home/lizh/workspace/learning_ws/devel/.private/learning_topic/lib/pkgconfig/learning_topic.pc, /home/lizh/workspace/learning_ws/devel/lib/pkgconfig/learning_topic.pc)

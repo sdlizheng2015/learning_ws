@@ -1,0 +1,3 @@
+[01m[K/home/lizh/workspace/learning_ws/src/learning_topic/src/pose_sub.cpp:12:28:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include "turtlesim/Pose.h"[01;35m[K>[m[K
+                            [01;35m[K^[m[K

@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95ddd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95ddd.dir/build.make CMakeFiles/cmTC_95ddd.dir/build
+make[1]: Entering directory '/home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95ddd.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_95ddd.dir/CheckSymbolExists.c.o   -c /home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_95ddd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95ddd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_95ddd.dir/CheckSymbolExists.c.o  -o cmTC_95ddd 
+CMakeFiles/cmTC_95ddd.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_95ddd.dir/build.make:97: recipe for target 'cmTC_95ddd' failed
+make[1]: *** [cmTC_95ddd] Error 1
+make[1]: Leaving directory '/home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_95ddd/fast' failed
+make: *** [cmTC_95ddd/fast] Error 2
+
+File /home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8bc5c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bc5c.dir/build.make CMakeFiles/cmTC_8bc5c.dir/build
+make[1]: Entering directory '/home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bc5c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8bc5c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8bc5c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bc5c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8bc5c.dir/CheckFunctionExists.c.o  -o cmTC_8bc5c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8bc5c.dir/build.make:97: recipe for target 'cmTC_8bc5c' failed
+make[1]: *** [cmTC_8bc5c] Error 1
+make[1]: Leaving directory '/home/lizh/workspace/learning_ws/build/learning_topic/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8bc5c/fast' failed
+make: *** [cmTC_8bc5c/fast] Error 2
+
+

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target turtle_spawn[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_spawn.dir/src/turtle_spawn.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/lizh/workspace/learning_ws/devel/.private/learning_service/lib/learning_service/turtle_spawn[0m
+[100%] Built target turtle_spawn

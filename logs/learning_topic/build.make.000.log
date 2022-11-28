@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target turtle_velocity_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_velocity_pub.dir/src/velocity_pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/lizh/workspace/learning_ws/devel/.private/learning_topic/lib/learning_topic/turtle_velocity_pub[0m
+[100%] Built target turtle_velocity_pub

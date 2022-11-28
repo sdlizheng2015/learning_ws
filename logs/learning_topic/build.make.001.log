@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target turtle_pose_sub[0m
+[ 50%] Built target turtle_velocity_pub
+[ 75%] [32mBuilding CXX object CMakeFiles/turtle_pose_sub.dir/src/pose_sub.cpp.o[0m
+[01m[K/home/lizh/workspace/learning_ws/src/learning_topic/src/pose_sub.cpp:12:28:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include "turtlesim/Pose.h"[01;35m[K>[m[K
+                            [01;35m[K^[m[K
+[100%] [32m[1mLinking CXX executable /home/lizh/workspace/learning_ws/devel/.private/learning_topic/lib/learning_topic/turtle_pose_sub[0m
+[100%] Built target turtle_pose_sub
