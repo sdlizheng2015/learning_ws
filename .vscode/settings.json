@@ -5,6 +5,7 @@
     "files.associations": {
         "*.ipp": "cpp",
         "bitset": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "optional": "cpp"
     }
 }

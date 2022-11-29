@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   turtlesim
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -56,11 +57,11 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  Person.srv
+  # Service2.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -70,10 +71,11 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   geometry_msgs#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  # geometry_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES learning_service
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim
+ CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim message_runtime
 #  DEPENDS system_lib
 )
 
@@ -137,6 +139,12 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(turtle_spawn src/turtle_spawn.cpp)
 
+add_executable(turtle_command_server src/turtle_command_server.cpp)
+
+add_executable(person_server src/person_server.cpp)
+
+add_executable(person_client src/person_client.cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -145,10 +153,30 @@ add_executable(turtle_spawn src/turtle_spawn.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(person_server
+  ${PROJECT_NAME}_gencpp
+  ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS}
+)
+
+add_dependencies(person_client
+  ${PROJECT_NAME}_gencpp
+  ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS}
+)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(turtle_spawn
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(turtle_command_server
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(person_server
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(person_client
   ${catkin_LIBRARIES}
 )
 

@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target turtle_command_server[0m
+[ 50%] Built target turtle_spawn
+[ 75%] [32mBuilding CXX object CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/lizh/workspace/learning_ws/devel/.private/learning_service/lib/learning_service/turtle_command_server[0m
+[100%] Built target turtle_command_server

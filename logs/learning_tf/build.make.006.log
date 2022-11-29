@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target turtle_tf2_sub[0m
+[ 20%] Built target create_turtle
+[ 40%] Built target turtle_tf_broadcaster
+[ 60%] Built target turtle_tf_listener
+[ 70%] [32mBuilding CXX object CMakeFiles/turtle_tf2_sub.dir/src/turtle_tf2_sub.cpp.o[0m
+[ 90%] Built target turtle_tf2_pub
+[100%] [32m[1mLinking CXX executable /home/lizh/workspace/learning_ws/devel/.private/learning_tf/lib/learning_tf/turtle_tf2_sub[0m
+[100%] Built target turtle_tf2_sub

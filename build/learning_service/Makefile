@@ -90,17 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -111,6 +100,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -166,6 +166,162 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named turtle_spawn
+
+# Build rule for target.
+turtle_spawn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_spawn
+.PHONY : turtle_spawn
+
+# fast build rule for target.
+turtle_spawn/fast:
+	$(MAKE) -f CMakeFiles/turtle_spawn.dir/build.make CMakeFiles/turtle_spawn.dir/build
+.PHONY : turtle_spawn/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_genpy
+
+# Build rule for target.
+learning_service_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_genpy
+.PHONY : learning_service_genpy
+
+# fast build rule for target.
+learning_service_genpy/fast:
+	$(MAKE) -f CMakeFiles/learning_service_genpy.dir/build.make CMakeFiles/learning_service_genpy.dir/build
+.PHONY : learning_service_genpy/fast
+
+#=============================================================================
+# Target rules for targets named turtle_command_server
+
+# Build rule for target.
+turtle_command_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_command_server
+.PHONY : turtle_command_server
+
+# fast build rule for target.
+turtle_command_server/fast:
+	$(MAKE) -f CMakeFiles/turtle_command_server.dir/build.make CMakeFiles/turtle_command_server.dir/build
+.PHONY : turtle_command_server/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages_py
+
+# Build rule for target.
+learning_service_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages_py
+.PHONY : learning_service_generate_messages_py
+
+# fast build rule for target.
+learning_service_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages_py.dir/build.make CMakeFiles/learning_service_generate_messages_py.dir/build
+.PHONY : learning_service_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_gennodejs
+
+# Build rule for target.
+learning_service_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_gennodejs
+.PHONY : learning_service_gennodejs
+
+# fast build rule for target.
+learning_service_gennodejs/fast:
+	$(MAKE) -f CMakeFiles/learning_service_gennodejs.dir/build.make CMakeFiles/learning_service_gennodejs.dir/build
+.PHONY : learning_service_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_genlisp
+
+# Build rule for target.
+learning_service_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_genlisp
+.PHONY : learning_service_genlisp
+
+# fast build rule for target.
+learning_service_genlisp/fast:
+	$(MAKE) -f CMakeFiles/learning_service_genlisp.dir/build.make CMakeFiles/learning_service_genlisp.dir/build
+.PHONY : learning_service_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages_lisp
+
+# Build rule for target.
+learning_service_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages_lisp
+.PHONY : learning_service_generate_messages_lisp
+
+# fast build rule for target.
+learning_service_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages_lisp.dir/build.make CMakeFiles/learning_service_generate_messages_lisp.dir/build
+.PHONY : learning_service_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_geneus
+
+# Build rule for target.
+learning_service_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_geneus
+.PHONY : learning_service_geneus
+
+# fast build rule for target.
+learning_service_geneus/fast:
+	$(MAKE) -f CMakeFiles/learning_service_geneus.dir/build.make CMakeFiles/learning_service_geneus.dir/build
+.PHONY : learning_service_geneus/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages_eus
+
+# Build rule for target.
+learning_service_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages_eus
+.PHONY : learning_service_generate_messages_eus
+
+# fast build rule for target.
+learning_service_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages_eus.dir/build.make CMakeFiles/learning_service_generate_messages_eus.dir/build
+.PHONY : learning_service_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_gencpp
+
+# Build rule for target.
+learning_service_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_gencpp
+.PHONY : learning_service_gencpp
+
+# fast build rule for target.
+learning_service_gencpp/fast:
+	$(MAKE) -f CMakeFiles/learning_service_gencpp.dir/build.make CMakeFiles/learning_service_gencpp.dir/build
+.PHONY : learning_service_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages_cpp
+
+# Build rule for target.
+learning_service_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages_cpp
+.PHONY : learning_service_generate_messages_cpp
+
+# fast build rule for target.
+learning_service_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages_cpp.dir/build.make CMakeFiles/learning_service_generate_messages_cpp.dir/build
+.PHONY : learning_service_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _learning_service_generate_messages_check_deps_Person
+
+# Build rule for target.
+_learning_service_generate_messages_check_deps_Person: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _learning_service_generate_messages_check_deps_Person
+.PHONY : _learning_service_generate_messages_check_deps_Person
+
+# fast build rule for target.
+_learning_service_generate_messages_check_deps_Person/fast:
+	$(MAKE) -f CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build.make CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build
+.PHONY : _learning_service_generate_messages_check_deps_Person/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -257,6 +413,19 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages_nodejs
+
+# Build rule for target.
+learning_service_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages_nodejs
+.PHONY : learning_service_generate_messages_nodejs
+
+# fast build rule for target.
+learning_service_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages_nodejs.dir/build.make CMakeFiles/learning_service_generate_messages_nodejs.dir/build
+.PHONY : learning_service_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -480,6 +649,19 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named person_client
+
+# Build rule for target.
+person_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 person_client
+.PHONY : person_client
+
+# fast build rule for target.
+person_client/fast:
+	$(MAKE) -f CMakeFiles/person_client.dir/build.make CMakeFiles/person_client.dir/build
+.PHONY : person_client/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -491,6 +673,19 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 rosgraph_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named learning_service_generate_messages
+
+# Build rule for target.
+learning_service_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service_generate_messages
+.PHONY : learning_service_generate_messages
+
+# fast build rule for target.
+learning_service_generate_messages/fast:
+	$(MAKE) -f CMakeFiles/learning_service_generate_messages.dir/build.make CMakeFiles/learning_service_generate_messages.dir/build
+.PHONY : learning_service_generate_messages/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -517,6 +712,19 @@ std_srvs_generate_messages_cpp: cmake_check_build_system
 std_srvs_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named person_server
+
+# Build rule for target.
+person_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 person_server
+.PHONY : person_server
+
+# fast build rule for target.
+person_server/fast:
+	$(MAKE) -f CMakeFiles/person_server.dir/build.make CMakeFiles/person_server.dir/build
+.PHONY : person_server/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -623,19 +831,6 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named turtle_spawn
-
-# Build rule for target.
-turtle_spawn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 turtle_spawn
-.PHONY : turtle_spawn
-
-# fast build rule for target.
-turtle_spawn/fast:
-	$(MAKE) -f CMakeFiles/turtle_spawn.dir/build.make CMakeFiles/turtle_spawn.dir/build
-.PHONY : turtle_spawn/fast
-
-#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -687,6 +882,87 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/person_client.o: src/person_client.cpp.o
+
+.PHONY : src/person_client.o
+
+# target to build an object file
+src/person_client.cpp.o:
+	$(MAKE) -f CMakeFiles/person_client.dir/build.make CMakeFiles/person_client.dir/src/person_client.cpp.o
+.PHONY : src/person_client.cpp.o
+
+src/person_client.i: src/person_client.cpp.i
+
+.PHONY : src/person_client.i
+
+# target to preprocess a source file
+src/person_client.cpp.i:
+	$(MAKE) -f CMakeFiles/person_client.dir/build.make CMakeFiles/person_client.dir/src/person_client.cpp.i
+.PHONY : src/person_client.cpp.i
+
+src/person_client.s: src/person_client.cpp.s
+
+.PHONY : src/person_client.s
+
+# target to generate assembly for a file
+src/person_client.cpp.s:
+	$(MAKE) -f CMakeFiles/person_client.dir/build.make CMakeFiles/person_client.dir/src/person_client.cpp.s
+.PHONY : src/person_client.cpp.s
+
+src/person_server.o: src/person_server.cpp.o
+
+.PHONY : src/person_server.o
+
+# target to build an object file
+src/person_server.cpp.o:
+	$(MAKE) -f CMakeFiles/person_server.dir/build.make CMakeFiles/person_server.dir/src/person_server.cpp.o
+.PHONY : src/person_server.cpp.o
+
+src/person_server.i: src/person_server.cpp.i
+
+.PHONY : src/person_server.i
+
+# target to preprocess a source file
+src/person_server.cpp.i:
+	$(MAKE) -f CMakeFiles/person_server.dir/build.make CMakeFiles/person_server.dir/src/person_server.cpp.i
+.PHONY : src/person_server.cpp.i
+
+src/person_server.s: src/person_server.cpp.s
+
+.PHONY : src/person_server.s
+
+# target to generate assembly for a file
+src/person_server.cpp.s:
+	$(MAKE) -f CMakeFiles/person_server.dir/build.make CMakeFiles/person_server.dir/src/person_server.cpp.s
+.PHONY : src/person_server.cpp.s
+
+src/turtle_command_server.o: src/turtle_command_server.cpp.o
+
+.PHONY : src/turtle_command_server.o
+
+# target to build an object file
+src/turtle_command_server.cpp.o:
+	$(MAKE) -f CMakeFiles/turtle_command_server.dir/build.make CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.o
+.PHONY : src/turtle_command_server.cpp.o
+
+src/turtle_command_server.i: src/turtle_command_server.cpp.i
+
+.PHONY : src/turtle_command_server.i
+
+# target to preprocess a source file
+src/turtle_command_server.cpp.i:
+	$(MAKE) -f CMakeFiles/turtle_command_server.dir/build.make CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.i
+.PHONY : src/turtle_command_server.cpp.i
+
+src/turtle_command_server.s: src/turtle_command_server.cpp.s
+
+.PHONY : src/turtle_command_server.s
+
+# target to generate assembly for a file
+src/turtle_command_server.cpp.s:
+	$(MAKE) -f CMakeFiles/turtle_command_server.dir/build.make CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.s
+.PHONY : src/turtle_command_server.cpp.s
+
 src/turtle_spawn.o: src/turtle_spawn.cpp.o
 
 .PHONY : src/turtle_spawn.o
@@ -723,8 +999,20 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... turtle_spawn"
+	@echo "... learning_service_genpy"
+	@echo "... turtle_command_server"
+	@echo "... learning_service_generate_messages_py"
+	@echo "... learning_service_gennodejs"
+	@echo "... learning_service_genlisp"
+	@echo "... learning_service_generate_messages_lisp"
+	@echo "... learning_service_geneus"
+	@echo "... learning_service_generate_messages_eus"
+	@echo "... edit_cache"
+	@echo "... learning_service_gencpp"
+	@echo "... learning_service_generate_messages_cpp"
+	@echo "... _learning_service_generate_messages_check_deps_Person"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -733,6 +1021,7 @@ help:
 	@echo "... turtlesim_generate_messages_cpp"
 	@echo "... tests"
 	@echo "... rebuild_cache"
+	@echo "... learning_service_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -751,9 +1040,12 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... person_client"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... learning_service_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... person_server"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_nodejs"
@@ -762,11 +1054,19 @@ help:
 	@echo "... turtlesim_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_py"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... turtle_spawn"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/person_client.o"
+	@echo "... src/person_client.i"
+	@echo "... src/person_client.s"
+	@echo "... src/person_server.o"
+	@echo "... src/person_server.i"
+	@echo "... src/person_server.s"
+	@echo "... src/turtle_command_server.o"
+	@echo "... src/turtle_command_server.i"
+	@echo "... src/turtle_command_server.s"
 	@echo "... src/turtle_spawn.o"
 	@echo "... src/turtle_spawn.i"
 	@echo "... src/turtle_spawn.s"

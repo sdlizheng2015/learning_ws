@@ -1,0 +1,56 @@
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:72:[m[K [01;31m[Kerror: [m[K‘[01m[KEmpty[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+     ros::ServiceClient clear_background = node.serviceClient<std_msgs::[01;31m[KEmpty[m[K>("/clear");
+                                                                        [01;31m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:72:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:13:0[m[K:
+[01m[K/opt/ros/melodic/include/std_srvs/Empty.h:18:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_srvs::Empty[m[K’
+ struct [01;36m[KEmpty[m[K
+        [01;36m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:72:[m[K [01;31m[Kerror: [m[K‘[01m[KEmpty[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+     ros::ServiceClient clear_background = node.serviceClient<std_msgs::[01;31m[KEmpty[m[K>("/clear");
+                                                                        [01;31m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:72:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:13:0[m[K:
+[01m[K/opt/ros/melodic/include/std_srvs/Empty.h:18:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_srvs::Empty[m[K’
+ struct [01;36m[KEmpty[m[K
+        [01;36m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::serviceClient<<expression error> >(const char [7])[m[K’
+     ros::ServiceClient clear_background = node.serviceClient<std_msgs::Empty>("/clear"[01;31m[K)[m[K;
+                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:12[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)
+   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::ServiceClient clear_background = node.serviceClient<std_msgs::Empty>("/clear"[01;31m[K)[m[K;
+                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:12[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class Service> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)
+   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:37:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::ServiceClient clear_background = node.serviceClient<std_msgs::Empty>("/clear"[01;31m[K)[m[K;
+                                                                                       [01;31m[K^[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:38:15:[m[K [01;31m[Kerror: [m[K‘[01m[KEmpty[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+     std_msgs::[01;31m[KEmpty[m[K srv;
+               [01;31m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:38:15:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:13:0[m[K:
+[01m[K/opt/ros/melodic/include/std_srvs/Empty.h:18:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_srvs::Empty[m[K’
+ struct [01;36m[KEmpty[m[K
+        [01;36m[K^~~~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:39:27:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ was not declared in this scope
+     clear_background.call([01;31m[Ksrv[m[K);
+                           [01;31m[K^~~[m[K
+[01m[K/home/lizh/workspace/learning_ws/src/learning_parameter/src/parameter_config.cpp:39:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kargv[m[K’
+     clear_background.call([01;36m[Ksrv[m[K);
+                           [01;36m[K^~~[m[K
+                           [32m[Kargv[m[K
+make[2]: *** [CMakeFiles/parameter_config.dir/src/parameter_config.cpp.o] Error 1
+make[1]: *** [CMakeFiles/parameter_config.dir/all] Error 2
+make: *** [all] Error 2

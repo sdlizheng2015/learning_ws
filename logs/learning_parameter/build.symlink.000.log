@@ -1,0 +1,4 @@
+Symlinking /home/lizh/workspace/learning_ws/devel/share/learning_parameter/cmake/learning_parameterConfig.cmake
+Symlinking /home/lizh/workspace/learning_ws/devel/share/learning_parameter/cmake/learning_parameterConfig-version.cmake
+Symlinking /home/lizh/workspace/learning_ws/devel/lib/learning_parameter/parameter_config
+Symlinking /home/lizh/workspace/learning_ws/devel/lib/pkgconfig/learning_parameter.pc

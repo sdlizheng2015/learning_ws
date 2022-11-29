@@ -1,0 +1,9 @@
+[01m[K/home/lizh/workspace/learning_ws/src/learning_tf/src/turtle_tf_listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lizh/workspace/learning_ws/src/learning_tf/src/turtle_tf_listener.cpp:52:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ros::Rate[m[K’ has no member named ‘[01m[Ksle[m[K’; did you mean ‘[01m[Ksleep[m[K’?
+         rate.[01;31m[Ksle[m[K();
+              [01;31m[K^~~[m[K
+              [32m[Ksleep[m[K
+make[2]: *** [CMakeFiles/turtle_tf_listener.dir/src/turtle_tf_listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/turtle_tf_listener.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

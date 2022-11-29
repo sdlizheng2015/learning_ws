@@ -1,0 +1,1 @@
+/home/lizh/workspace/learning_ws/devel/.private/learning_service/share/common-lisp/ros/learning_service/srv/learning_service-srv.asd

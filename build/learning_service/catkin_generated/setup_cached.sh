@@ -8,5 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/lizh/workspace/learning_ws/devel/.private/learning_service:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lizh/workspace/learning_ws/devel/.private/learning_service/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/lizh/workspace/learning_ws/devel/.private/learning_service/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/lizh/workspace/learning_ws/build/learning_service'
+export PYTHONPATH="/home/lizh/workspace/learning_ws/devel/.private/learning_service/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROS_PACKAGE_PATH="/home/lizh/workspace/learning_ws/src/learning_service:$ROS_PACKAGE_PATH"
